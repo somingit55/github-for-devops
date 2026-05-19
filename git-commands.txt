@@ -4,9 +4,9 @@ git add -- adding files stage is changing from untracked to stage  you can not t
 git commit -m "Anything Write" -- stage is changing from stage to Tracked
 git restore-- If you delete file you can store when the file is in tracked already
 
-git remote add origin https://github.com/somingi/github-for-devops.git
+git remote add origin https://github.com/somingi5/github-for-devops.git
 git remote -v -- 
-git remote set-url origin https://ghp_Xxxxxxxxxxxxxxxxxxxxx@github.com/somingit55/github-for-devops.git
+git remote set-url origin https://ghp_xxxxxxxxxxxxxxxxxxxxxxxxxx@github.com/soming5/github-for-devops.git
 git push origin master
 
 ## Check currently username password on Git below commands run on Local
@@ -24,4 +24,3 @@ git config --global user.email "YourGithub@gmail.com"
 
 git config --global --list
 
-this is my commands updated hi hello how are you
