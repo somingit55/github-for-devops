@@ -24,4 +24,4 @@ git config --global user.email "YourGithub@gmail.com"
 
 git config --global --list
 
-this is my commands
+this is my commands updated
