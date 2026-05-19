@@ -1,5 +1,25 @@
 git init-- you can initialized empty repo
 git status -- you can check file status
-git add -- adding files stage is changing from untracked to stage  you can not tracked file on stage mode   
+git add -- adding files stage is changing from untracked to stage  you can not tracked file on stage mode clear  
 git commit -m "Anything Write" -- stage is changing from stage to Tracked
 git restore-- If you delete file you can store when the file is in tracked already
+
+git remote add origin https://github.com/somingi/github-for-devops.git
+git remote -v -- 
+git remote set-url origin https://ghp_Xxxxxxxxxxxxxxxxxxxxx@github.com/somingit55/github-for-devops.git
+git push origin master
+
+## Check currently username password on Git below commands run on Local
+Example-- Prince
+
+git config --global user.name
+git config --global user.email
+
+## Set Username & Email on Local    
+
+git config --global user.name "Your Github Username"
+git config --global user.email "YourGithub@gmail.com"
+
+# Verify
+
+git config --global --list
