@@ -25,3 +25,33 @@ git config --global user.email "YourGithub@gmail.com"
 git config --global --list
 
 this is my commands updated hi hello how are you
+
+## Branches
+
+Main master dev are branches name
+git branch -- show branch
+git branch dev  --- dev branch created 
+git switch dev --- Switching branch git checkout and git switch are same 
+git log -- check lates commit
+git log --oneline
+
+# Head represent the latest commit on your repository
+
+# suppose if we want to push dev new branch on Github so how can i push it
+
+go inside the branch and check status
+git push origin dev -- created new dev branch on Github and push 
+
+#branch merging master and dev
+go to pull request and click new pull request
+
+# Pull request It a way of merging one branch to another branch on github
+
+Base is master and compare is dev after create pull request
+click on create pull request
+click on merge pull request
+show on repository dev changes are visible on master 
+
+git switch master 
+git pull origin master 
+changes show on Local vs code 
