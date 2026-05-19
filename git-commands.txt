@@ -1,0 +1,5 @@
+git init-- you can initialized empty repo
+git status -- you can check file status
+git add -- adding files stage is changing from untracked to stage  you can not tracked file on stage mode   
+git commit -m "Anything Write" -- stage is changing from stage to Tracked
+git restore-- If you delete file you can store when the file is in tracked already
