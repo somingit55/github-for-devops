@@ -23,5 +23,3 @@ git config --global user.email "YourGithub@gmail.com"
 # Verify
 
 git config --global --list
-
-this is my commands updated hi hello how are you
