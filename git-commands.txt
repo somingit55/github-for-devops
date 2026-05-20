@@ -54,4 +54,11 @@ show on repository dev changes are visible on master
 
 git switch master 
 git pull origin master 
-changes show on Local vs code 
+changes show on Local vs code
+
+# fetch vs Pull
+git fetch -- if you want all branches from your github in your local vs code use git fetch
+git pull -- if you want remote changes and any branch specific changes from your Github(Origin)
+to in your local VS Code then you will use git pull origin
+
+#Git HOOKS 
