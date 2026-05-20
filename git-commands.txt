@@ -1,64 +1,120 @@
-git init-- you can initialized empty repo
-git status -- you can check file status
-git add -- adding files stage is changing from untracked to stage  you can not tracked file on stage mode clear  
-git commit -m "Anything Write" -- stage is changing from stage to Tracked
-git restore-- If you delete file you can store when the file is in tracked already
+# Git & GitHub Commands Cheat Sheet
 
-git remote add origin https://github.com/somingi5/github-for-devops.git
-git remote -v -- 
-git remote set-url origin https://ghp_xxxxxxxxxxxxxxxxxxxxxxxxxx@github.com/soming5/github-for-devops.git
+## Initialize Repository
+git init
+# Initializes empty Git repository
+
+## Check Status
+git status
+# Shows file status (tracked, untracked, modified)
+
+## Add Files to Staging
+git add .
+git add <filename>
+# Moves files from untracked to staged
+
+## Commit Changes
+git commit -m "Your Message"
+# Saves staged changes
+
+## Restore Deleted/Modified File
+git restore <filename>
+# Restores tracked file
+
+# Remote Repository
+
+## Add Remote
+git remote add origin https://github.com/username/repository.git
+
+## Check Remote
+git remote -v
+
+## Change Remote URL
+git remote set-url origin https://ghp_xxxxxxxxxx@github.com/username/repository.git
+
+## Push Code
 git push origin master
+git push origin main
 
-## Check currently username password on Git below commands run on Local
-Example-- Prince
+# Git Config
 
+## Check Username & Email
 git config --global user.name
 git config --global user.email
 
-## Set Username & Email on Local    
+## Set Username & Email
+git config --global user.name "Your GitHub Username"
+git config --global user.email "yourgithub@gmail.com"
 
-git config --global user.name "Your Github Username"
-git config --global user.email "YourGithub@gmail.com"
-
-# Verify
-
+## Verify Config
 git config --global --list
 
-this is my commands updated hi hello how are you
+# Branches
 
-## Branches
+## Show Branches
+git branch
 
-Main master dev are branches name
-git branch -- show branch
-git branch dev  --- dev branch created 
-git switch dev --- Switching branch git checkout and git switch are same 
-git log -- check latest commit
+## Create Branch
+git branch dev
+
+## Switch Branch
+git switch dev
+git checkout dev
+
+# Logs
+
+## Full Commit History
+git log
+
+## One Line History
 git log --oneline
 
-# Head represent the latest commit on your repository
+# HEAD
+# HEAD represents latest commit of current branch
 
-# suppose if we want to push dev new branch on Github so how can i push it
+# Push New Branch to GitHub
+git switch dev
+git status
+git push origin dev
 
-go inside the branch and check status
-git push origin dev -- created new dev branch on Github and push 
+# Pull Request (PR)
+# PR is used to merge one branch into another on GitHub
 
-#branch merging master and dev
-go to pull request and click new pull request
+## Merge Steps on GitHub
+1. Open GitHub Repository
+2. Click Pull Requests
+3. Click New Pull Request
+4. Base = master/main
+5. Compare = dev
+6. Create Pull Request
+7. Merge Pull Request
 
-# Pull request It a way of merging one branch to another branch on github
+# Update Local After Merge
+git switch master
+git switch main
 
-Base is master and compare is dev after create pull request
-click on create pull request
-click on merge pull request
-show on repository dev changes are visible on master 
+git pull origin master
+git pull origin main
 
-git switch master 
-git pull origin master 
-changes show on Local vs code
+# Fetch vs Pull
 
-# fetch vs Pull
-git fetch -- if you want all branches from your github in your local vs code use git fetch
-git pull -- if you want remote changes and any branch specific changes from your Github(Origin)
-to in your local VS Code then you will use git pull origin
+## Fetch
+git fetch
+# Downloads all branches and updates from GitHub
 
-Head- it shows the latest commit
+## Pull
+git pull origin main
+# Downloads + merges latest changes into local
+
+# Important Commands Summary
+
+git init        -> Initialize repository
+git status      -> Check status
+git add         -> Add files to staging
+git commit      -> Save changes
+git push        -> Upload code to GitHub
+git pull        -> Download & merge changes
+git fetch       -> Download remote updates
+git branch      -> Show/create branches
+git switch      -> Switch branches
+git log         -> Show commit history
