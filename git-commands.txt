@@ -32,7 +32,7 @@ Main master dev are branches name
 git branch -- show branch
 git branch dev  --- dev branch created 
 git switch dev --- Switching branch git checkout and git switch are same 
-git log -- check lates commit
+git log -- check latest commit
 git log --oneline
 
 # Head represent the latest commit on your repository
@@ -61,4 +61,4 @@ git fetch -- if you want all branches from your github in your local vs code use
 git pull -- if you want remote changes and any branch specific changes from your Github(Origin)
 to in your local VS Code then you will use git pull origin
 
-#Git HOOKS 
+Head- it shows the latest commit
